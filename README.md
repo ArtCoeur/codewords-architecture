@@ -5,7 +5,22 @@ Arch overviews of the system
 
 # Events
 
-* board.new - rename to ac.board.new
-* 
+_rename event names to 'ac.%'_
 
+## names
+* board.new
+* word.new
+* cell.new
+
+## format
+  
+   {
+      board: %board-id%,
+      name: %event-name%,
+      data: {
+          body: %data%,
+          type: %mime-type%
+      }
+    }
+     
 # Process flow
